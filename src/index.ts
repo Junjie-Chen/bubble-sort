@@ -24,3 +24,5 @@ linkedList.add(-5);
 linkedList.add(-10);
 
 linkedList.sort();
+
+linkedList.log();
