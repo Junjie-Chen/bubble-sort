@@ -65,4 +65,15 @@ export class LinkedList extends Sorter {
 
     throw new Error('Node can not be found.');
   }
+
+  compare(leftIndex: number, rightIndex: number): boolean {
+    if (!this.head) {
+      throw new Error('Linked list is empty.');
+    }
+
+    const leftNode = this.search(leftIndex);
+    const rightNode = this.search(rightIndex);
+
+    return leftNode.value > rightNode.value;
+  }
 }
