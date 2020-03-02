@@ -22,3 +22,5 @@ linkedList.add(0);
 linkedList.add(0);
 linkedList.add(-5);
 linkedList.add(-10);
+
+linkedList.sort();
