@@ -43,4 +43,26 @@ export class LinkedList extends Sorter {
 
     return length;
   }
+
+  search(index: number): Node {
+    if (!this.head) {
+      throw new Error('Linked list is empty.');
+    }
+
+    let counter = 0;
+
+    let node: Node | null = this.head;
+
+    while (node) {
+      if (counter === index) {
+        return node;
+      }
+
+      counter++;
+
+      node = node.next;
+    }
+
+    throw new Error('Node can not be found.');
+  }
 }
