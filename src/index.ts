@@ -1,5 +1,6 @@
 import { Array } from './Array';
 import { String } from './String';
+import { LinkedList } from './LinkedList';
 
 const array = new Array([10, 5, 0, 0, -5, -10]);
 
@@ -12,3 +13,5 @@ const string = new String('ZyXwVu');
 string.sort();
 
 console.log(string.letters);
+
+const linkedList = new LinkedList();
