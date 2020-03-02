@@ -76,4 +76,14 @@ export class LinkedList extends Sorter {
 
     return leftNode.value > rightNode.value;
   }
+
+  swap(leftIndex: number, rightIndex: number): void {
+    const leftNode = this.search(leftIndex);
+    const rightNode = this.search(rightIndex);
+
+    const leftValue = leftNode.value;
+
+    leftNode.value = rightNode.value;
+    rightNode.value = leftValue;
+  }
 }
