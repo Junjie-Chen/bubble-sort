@@ -15,4 +15,15 @@ export class String extends Sorter {
 
     return leftLetter.toLowerCase() > rightLetter.toLowerCase();
   }
+
+  swap(leftIndex: number, rightIndex: number): void {
+    const letters = this.letters.split('');
+
+    const leftLetter = letters[leftIndex];
+
+    letters[leftIndex] = letters[rightIndex];
+    letters[rightIndex] = leftLetter;
+
+    this.letters = letters.join('');
+  }
 }
