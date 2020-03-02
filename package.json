@@ -4,6 +4,7 @@
   "description": "_Sort arbitrary collections in an ascending order using abstract class inheritance_",
   "main": "index.js",
   "scripts": {
+    "start:build": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
