@@ -86,4 +86,18 @@ export class LinkedList extends Sorter {
     leftNode.value = rightNode.value;
     rightNode.value = leftValue;
   }
+
+  log(): void {
+    if (!this.head) {
+      return;
+    }
+
+    let node: Node | null = this.head;
+
+    while (node) {
+      console.log(node.value);
+
+      node = node.next;
+    }
+  }
 }
