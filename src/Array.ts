@@ -15,4 +15,11 @@ export class Array extends Sorter {
 
     return leftNumber > rightNumber;
   }
+
+  swap(leftIndex: number, rightIndex: number): void {
+    const leftNumber = this.numbers[leftIndex];
+
+    this.numbers[leftIndex] = this.numbers[rightIndex];
+    this.numbers[rightIndex] = leftNumber;
+  }
 }
