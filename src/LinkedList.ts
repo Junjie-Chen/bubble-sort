@@ -3,3 +3,7 @@ class Node {
 
   constructor(public value: number) {}
 }
+
+export class LinkedList {
+  head: Node | null = null;
+}
