@@ -10,3 +10,5 @@ console.log(array.numbers);
 const string = new String('ZyXwVu');
 
 string.sort();
+
+console.log(string.letters);
