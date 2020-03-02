@@ -1,3 +1,7 @@
-export class String {
-  constructor(public letters: string) {}
+import { Sorter } from './Sorter';
+
+export class String extends Sorter {
+  constructor(public letters: string) {
+    super();
+  }
 }
